@@ -5,9 +5,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
-@RequestMapping("/hello")
-	public String welcom(){
-		
+	@RequestMapping("/hello")
+	public String welcom() {
+
+		System.out.println("执行操作。。。");
 		return "hello word!";
 	}
 }
